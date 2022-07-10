@@ -14,7 +14,7 @@ export default class KanbanBoard extends Component {
     this.stagesNames = ["Backlog", "To Do", "Ongoing", "Done"];
   }
 
-  setTaskBackWard = (e, task) => {
+  setTaskBackward = (e, task) => {
     if (task.stage <= 3 && task.stage >= 1) {
       task = { name: task.name, stage: task.stage-- };
     }
@@ -79,7 +79,7 @@ export default class KanbanBoard extends Component {
                                   .split(" ")
                                   .join("-")}-back`}
                                 disabled={noBackward}
-                                onClick={(e) => this.setTaskBackWard(e, task)}
+                                onClick={(e) => this.setTaskBackward(e, task)}
                               >
                                 <i className="material-icons">arrow_back</i>
                               </button>
