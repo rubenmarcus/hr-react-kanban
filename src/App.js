@@ -7,7 +7,6 @@ const title = "Kanban Board";
 
 class App extends Component {
   render() {
-    console.log(this.props.tasks, "tasks");
     return (
       <div>
         <h8k-navbar header={title}></h8k-navbar>
